@@ -9,7 +9,7 @@
   aspect-ratio: 16/9;
   position: relative;
   overflow: hidden;
-  container-type: inline-size;
+  /* container-type: inline-size; */
 }
 
 h1 {
@@ -18,7 +18,52 @@ h1 {
   font-size: 1.8rem;
   letter-spacing: 5px;
   margin: 50px auto;
-  /*   text-align: center; */
+}
+
+h2 {
+  font-family: "ABC Diatype, inter, san serif";
+  color: #cc0f1e;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h3 {
+  font-family: "ABC Diatype, inter, san serif";
+  color: #cc0f1e;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  margin: 20px;
+  text-align: center;
+}
+
+h4 {
+  font-family: "inter, san serif";
+  color: #cc0f1e;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 7px;
+  font-weight: 400;
+}
+h5 {
+  font-family: "inter, san serif";
+  color: #cc0f1e;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  margin: 7px;
+  font-weight: 200;
+}
+
+h6 {
+  font-family: "inter, san serif";
+  color: #cc0f1e;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 7px;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 a {
@@ -26,20 +71,21 @@ a {
   text-decoration: none;
   list-style: none;
 }
+
 .list4 {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 11px;
+  padding-top: 4%;
   font-family: "ABC Diatype, inter, sans-serif";
   color: #cc0f1e;
   font-size: 1.8rem;
   letter-spacing: 5px;
-  padding-bottom: 30%;
+  padding-bottom: 17%;
   position: relative;
 }
 
 .list4 li {
-  margin-bottom: 10px; /* Juster dette efter behov */
+  margin-bottom: 21px; /* Juster dette efter behov */
   position: relative;
 }
 
@@ -57,4 +103,157 @@ a {
 
 .list4 li:hover::after {
   width: 100%;
+}
+
+.copenfinds {
+  margin: 0.7%;
+}
+
+.category {
+  padding-top: 6%;
+  margin-left: -3%;
+}
+
+.forskellige_caregorys {
+  font-family: "ABC Diatype, inter, san serif";
+  color: #cc0f1e;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin: 23px auto;
+  text-align: center;
+
+  display: block; /* Dette sikrer, at hvert link er et blokelement */
+  margin-bottom: 10px; /* Juster dette efter behov */
+  display: flex;
+  flex-direction: column; /* Dette sikrer, at elementerne står under hinanden */
+  text-align: center;
+  font-weight: 500;
+}
+
+.streg_underh3 {
+  border-top: 0.5px solid #cc0f1e;
+  width: 20%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 39%;
+}
+
+.musseliste {
+  display: inline-block; /* Eller brug "display: inline;" */
+  margin-right: 10px; /* Juster afstanden mellem linkene efter behov */
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+
+.minibillede {
+  width: 85%;
+}
+
+.subcategory {
+  letter-spacing: 3px;
+  font-style: italic;
+  padding-top: 0.5%;
+}
+
+.pris {
+  font-weight: bolder;
+}
+
+.read_more {
+  padding-top: 0.7%;
+}
+
+.product {
+  position: relative;
+  padding-top: 8%;
+}
+
+.product .name {
+  position: relative;
+}
+
+.product .name::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #cc0f1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.product .name:hover::after {
+  width: 80%;
+  margin-left: 1.5%;
+}
+
+.product .read_more {
+  position: relative;
+}
+
+.product .read_more::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #cc0f1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.product .read_more:hover::after {
+  width: 28%;
+  margin-left: 1.5%;
+}
+
+.stortbillede {
+  width: 80%;
+}
+
+.product {
+  position: relative;
+}
+
+.product .name {
+  position: relative;
+}
+
+.product .name::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #cc0f1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.product .name:hover::after {
+  width: 100%;
+}
+
+.product .sale {
+  background-color: #cc0f1e;
+  color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-left: 1%;
+}
+
+.product .discount {
+  color: #cc0f1e;
+  margin-left: 5px;
+}
+
+.product .pris {
+  margin-top: 10px;
 }

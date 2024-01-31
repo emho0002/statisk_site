@@ -1,3 +1,50 @@
 .overskrift1 {
   width: 50%;
+  margin-top: 13%;
+}
+
+.grid1 {
+  /* display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 20px;
+  align-items: center; */
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  margin: auto;
+}
+
+.grid2 {
+  /* display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 20px;
+  align-items: center; */
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-bottom: 5%;
+  /* padding-top: 3%; */
+  margin: auto;
+  gap: 20px;
+  align-items: center;
+  margin-left: 6%;
+}
+
+.product1 {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  margin: auto;
+}
+
+.tekstgrid {
+  text-align: right;
+  padding-right: 5%;
 }

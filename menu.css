@@ -20,13 +20,12 @@ header {
 header {
   display: flex;
   font-family: "Inter", sans-serif;
-
   font-size: 0.8rem;
   font-weight: 700;
   /* letter-spacing: 5%; */
   line-height: 2;
   color: #cc0f1e;
-  max-width: 1675px;
+  max-width: 1350px;
   margin: 0px auto;
   padding: 1rem 2rem;
 
@@ -159,4 +158,5 @@ footer {
   line-height: 2;
   color: #cc0f1e;
   text-transform: uppercase;
+  padding-top: 4%;
 }
