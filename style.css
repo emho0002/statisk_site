@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+h1 {
+  font-family: "ABC Diatype, inter, san serif";
+  color: #cc0f1e;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  margin: 50px auto;
+  /*   text-align: center; */
+}
+
+a {
+  color: #cc0f1e;
+  text-decoration: none;
+  list-style: none;
+}
+.list4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "ABC Diatype, inter, sans-serif";
+  color: #cc0f1e;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.list4 li {
+  margin-bottom: 10px; /* Juster dette efter behov */
+  position: relative;
+}
+
+.list4 li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #cc0f1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.list4 li:hover::after {
+  width: 100%;
+}
