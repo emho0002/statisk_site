@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
 fetch("https://kea-alt-del.dk/t7/api/products")
-  .then((Response) => Response.json())
+  .then((response) => response.json())
   .then(showProducts);
 
 function showProducts(products) {
