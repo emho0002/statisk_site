@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statisk site</title>
+    <title>PRODUCT</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="product">
 
     <header>
         <div class="logo">
@@ -23,7 +23,7 @@
             <ul class="menu">
                 <li><a href="category.html">CATEGORY</a></li>
                 <li><a href="productlist.html">PRODUCTLIST</a></li>
-                <li><a href="product.html">PRODUCKT</a></li>
+                <li><a href="product.html">PRODUKT</a></li>
                 <li><a href="index.html">HOME</a></li>
             </ul>
             <div class="burger">
@@ -51,10 +51,13 @@
                         src="https://kea-alt-del.dk/t7/images/webp/1000/1561.webp" alt="stortbillede"></a>
             </div>
 
-            <div class="tekstgrid">
+            <section class="purchaseBox">
+
                 <div class="name1">
                     <h2>Women Sweat Proof hite T-shirt</h2>
                 </div>
+
+                <p><span class="brand">Nike</span> | Tshirts</p>
 
                 <div class="subcategory1">
                     <h5>Women Topwear</h5>
@@ -66,15 +69,38 @@
                         <h6 class="discount">29%</h6>
                     </div>
                 </div>
-                <div></div>
-                <div class="fritekst">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, beatae iste. Ipsum
-                        voluptates ratione tempore modi facere earum cupiditate suscipit quia! Alias in inventore
-                        deleniti,
-                        exercitationem veniam eligendi officiis cupiditate?</h5>
-                </div>
 
-            </div>
+                <form>
+                    <label>Choose a size
+                        <select name="size">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </label>
+                    <button>Add to basket</button>
+                </form>
+
+                <div class="info">
+                    <h2 class="p_info">Product Information</h2>
+                    <dl>
+                        <dt>Model name</dt>
+                        <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
+                        <dt>Color</dt>
+                        <dd>Blue</dd>
+                        <dt>Inventory number</dt>
+                        <dd>1163</dd>
+                    </dl>
+                    <h1>Nike</h1>
+                    <div class="fritekst">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, beatae iste. Ipsum
+                            voluptates ratione tempore modi facere earum cupiditate suscipit quia! Alias in inventore
+                            deleniti,
+                            exercitationem veniam eligendi officiis cupiditate?</h5>
+                    </div>
+                </div>
+            </section>
 
 
         </article>
@@ -87,6 +113,8 @@
         Emma Louise Høi
     </footer>
     <script src="main.js"></script>
+    <script src="productlist.js"></script>
+    <script src="product.js"></script>
 </body>
 
 </html>

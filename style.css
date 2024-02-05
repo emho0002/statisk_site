@@ -318,3 +318,15 @@ a {
 .hidden {
   display: none;
 }
+/* 
+.ProductTemplate article.soldOut img {
+  opacity: 0.5;
+}
+.ProductTemplate article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  padding: 1rem;
+}
+ */

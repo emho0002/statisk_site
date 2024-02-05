@@ -44,7 +44,31 @@
   margin: auto;
 }
 
-.tekstgrid {
+.purchaseBox {
   text-align: right;
   padding-right: 5%;
+}
+
+.purchaseBox {
+  background: #dedede;
+  color: var(--background-color);
+  padding: 1rem;
+}
+
+.purchaseBox form label {
+  gap: 1rem;
+}
+.purchaseBox button {
+  display: block;
+  margin-top: 1rem;
+  width: 28%;
+  margin-left: 72%;
+}
+.productlist article button {
+  margin-top: auto;
+}
+
+.p_info {
+  align-items: end;
+  text-align: end;
 }
