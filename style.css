@@ -13,15 +13,14 @@
 }
 
 h1 {
-  font-family: "ABC Diatype, inter, san serif";
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   letter-spacing: 5px;
   margin: 50px auto;
 }
 
 h2 {
-  font-family: "ABC Diatype, inter, san serif";
   color: #cc0f1e;
   font-size: 1.8rem;
   letter-spacing: 5px;
@@ -30,7 +29,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ABC Diatype, inter, san serif";
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
   font-size: 1.4rem;
   letter-spacing: 3px;
@@ -39,7 +38,7 @@ h3 {
 }
 
 h4 {
-  font-family: "inter, san serif";
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
   font-size: 1.2rem;
   letter-spacing: 3px;
@@ -47,7 +46,7 @@ h4 {
   font-weight: 400;
 }
 h5 {
-  font-family: "inter, san serif";
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
   font-size: 0.7rem;
   letter-spacing: 3px;
@@ -56,8 +55,8 @@ h5 {
 }
 
 h6 {
-  font-family: "inter, san serif";
-  color: #cc0f1e;
+  font-family: "Inter", sans-serif;
+  color: #15104f;
   font-size: 1rem;
   letter-spacing: 2px;
   margin: 7px;
@@ -67,6 +66,7 @@ h6 {
 }
 
 a {
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
   text-decoration: none;
   list-style: none;
@@ -76,7 +76,7 @@ a {
   list-style: none;
   margin: 11px;
   padding-top: 4%;
-  font-family: "ABC Diatype, inter, sans-serif";
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
   font-size: 1.8rem;
   letter-spacing: 5px;
@@ -110,12 +110,13 @@ a {
 }
 
 .category {
-  padding-top: 6%;
-  margin-left: -3%;
+  padding-top: 4%;
+  margin-left: -2%;
+  font-size: 3.5rem;
 }
 
 .forskellige_caregorys {
-  font-family: "ABC Diatype, inter, san serif";
+  font-family: "Inter", sans-serif;
   color: #cc0f1e;
   font-size: 0.8rem;
   letter-spacing: 2px;
@@ -151,18 +152,64 @@ a {
   width: 85%;
 }
 
-.subcategory {
-  letter-spacing: 3px;
-  font-style: italic;
-  padding-top: 0.5%;
+.name {
+  font-family: "Bebas Neue", sans-serif;
+  color: #15104f;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  margin: 6px;
+  font-weight: 200;
+  padding-top: 1%;
 }
 
-.pris {
+.brandname {
+  padding-top: 3%;
+  font-weight: 300;
+}
+
+.subcategory,
+.gender,
+.sammensat {
+  letter-spacing: 2px;
+  padding-top: 0.5%;
+  font-family: "Inter", sans-serif;
+  color: #15104f;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 300;
+}
+.sammensat {
+  margin: 0%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.pris_tekst,
+.data_price {
   font-weight: bolder;
+  color: #15104f;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.udsalg_tekst,
+.data_discount {
+  color: #cc0f1e;
+  font-size: 0.8rem;
 }
 
 .read_more {
-  padding-top: 0.7%;
+  padding-top: 4%;
+}
+.read_more_tekst {
+  color: #15104f;
+  font-weight: 300;
+}
+
+.line {
+  border-top: 0.5px solid #000f52;
+  width: 70%;
+  margin-left: 1.6%;
 }
 
 .product {
@@ -172,6 +219,7 @@ a {
 
 .product .name {
   position: relative;
+  padding-bottom: 3%;
 }
 
 .product .name::after {
@@ -179,7 +227,7 @@ a {
   display: block;
   width: 0;
   height: 1px;
-  background-color: #cc0f1e;
+  background-color: #15104f;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -200,7 +248,7 @@ a {
   display: block;
   width: 0;
   height: 1px;
-  background-color: #cc0f1e;
+  background-color: #15104f;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -228,8 +276,8 @@ a {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
-  background-color: #cc0f1e;
+  height: 1px;
+  background-color: #15104f;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -237,23 +285,36 @@ a {
 }
 
 .product .name:hover::after {
-  width: 100%;
+  width: 80%;
+  margin: 0%;
 }
 
-.product .sale {
-  background-color: #cc0f1e;
-  color: #fff;
-  padding: 3px;
-  border-radius: 3px;
-  margin-right: 5px;
-  margin-left: 1%;
+.pris,
+.udsalg,
+.sub_category {
+  display: flex;
 }
 
-.product .discount {
-  color: #cc0f1e;
-  margin-left: 5px;
+.soldout {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #dce8ff;
+  width: 85%;
+  padding: 0.6rem;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #15104f;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-align: end;
+  font-weight: 300;
 }
 
-.product .pris {
-  margin-top: 10px;
+.hide {
+  display: none;
+}
+
+.hidden {
+  display: none;
 }

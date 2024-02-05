@@ -74,6 +74,7 @@ nav {
   transition: color 0.3s;
   text-align: end;
   color: #cc0f1e;
+  letter-spacing: 1px;
 }
 
 .menu a:hover {
@@ -154,7 +155,7 @@ footer {
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 5%;
+  letter-spacing: 2px;
   line-height: 2;
   color: #cc0f1e;
   text-transform: uppercase;

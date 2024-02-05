@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="menu.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -46,6 +51,53 @@
         <h2 class="category"> >productlist</h2>
 
         <div class="grid2">
+            <template id="ProductTemplate">
+                <article class="product">
+                    <a href="product.html"><img class="minibillede"
+                            src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp" alt="minibillede"></a>
+
+                    <section class="productbody">
+                        <a href="product.html">
+                            <div class="name">
+                                <h4>Women Sweat Proof White T-shirt</h4>
+                            </div>
+                        </a>
+
+                        <div class="line"></div>
+
+                        <div class="brandname_1">
+                            <h6 class="brandname">brandname</h6>
+                        </div>
+
+                        <div class="sub_category">
+                            <h6 class="subcategory">Women Topwear,</h6>
+                            <h6 class="sammensat"> - </h6>
+                            <h6 class="gender"> gender,</h6>
+
+                        </div>
+
+                        <div class="pris">
+                            <h6 class="pris_tekst">Price: </h6>
+                            <h6 class="data_price">DKK 499,-</h6>
+                        </div>
+
+                        <div class="udsalg">
+                            <h6 class="udsalg_tekst">Sale price: </h6>
+                            <h6 class="data_discount">DISC,-</h6>
+                        </div>
+
+                        <div class="read_more">
+                            <a href="product.html">
+                                <h4 class="read_more_tekst">Read more</h4>
+                            </a>
+                        </div>
+
+                    </section>
+                </article>
+            </template>
+
+
+            <!-- 
             <article class="product">
                 <a href="product.html"><img class="minibillede"
                         src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp" alt="minibillede"></a>
@@ -276,36 +328,7 @@
                         <h4>Read more</h4>
                     </a>
                 </div>
-            </article>
-
-            <article class="product">
-                <a href="product.html"><img class="minibillede"
-                        src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp" alt="minibillede"></a>
-
-                <a href="product.html">
-                    <div class="name">
-                        <h4>Women Sweat Proof White T-shirt</h4>
-                    </div>
-                </a>
-
-                <div class="subcategory">
-                    <h5>Women Topwear</h5>
-                </div>
-
-                <div class="pris">
-                    <div>
-                        <span class="sale">Sale</span>
-                        <h6 class="price">DKK 499,-</h6>
-                        <h6 class="discount">29%</h6>
-                    </div>
-                </div>
-
-                <div class="read_more">
-                    <a href="product.html">
-                        <h4>Read more</h4>
-                    </a>
-                </div>
-            </article>
+            </article> -->
 
         </div>
 
@@ -317,6 +340,7 @@
         Emma Louise Høi
     </footer>
     <script src="main.js"></script>
+    <script src="productlist.js"></script>
 </body>
 
 </html>
