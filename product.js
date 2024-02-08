@@ -11,9 +11,10 @@ function showProduct(product) {
   console.log(product);
   document.querySelector(".purchaseBox h2").textContent = product.productdisplayname;
   document.querySelector(".purchaseBox .brand").textContent = product.brandname;
-  document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-}
+  document.querySelector("img").scr = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 
+  // appende til DOM
+}
 /*
 {
   "id": 1525,
